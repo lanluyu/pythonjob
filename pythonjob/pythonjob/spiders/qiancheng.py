@@ -23,15 +23,6 @@ class QianchengSpider(CrawlSpider):
             yield scrapy.Request(next_url,callback=self.parse)
         print (response.url)
 
-        '''
-        #获取下一页的链接  此方法有问题
-        next_url = response.xpath('.//a[contains(text(),"下一页")]/@href').extract_first()
-        #将下一页的链接丢给parse函数处理，继续得到工作详情链接和下一页链接
-        yield scrapy.Request(next_url,callback=self.parse)             
-        print (response.url)
-        '''
-        
-
     #定义处理工作详情页面的函数 parse_job
     def parse_job(self, response):   #此处的response为工作详情页面的响应内容
         #print ("----------------Start------------------") 
