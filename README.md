@@ -17,6 +17,6 @@ pythonjob是一个基于Scrapy的工作爬虫，目前爬取了前程无忧和�
 
 爬取结果
 -
-在前程无忧和智联招聘网站上总共爬取了31156条有关python工作的有效信息。结果由爬虫先存储在MongoDB中，再导出为Excle文件。部分数据如下截图：<br>
- ![image] (https://github.com/lanluyu/pythonjob/job.PNG)
+在前程无忧和智联招聘网站上总共爬取了31156条有关python工作的有效信息。结果由爬虫先存储在MongoDB中，再导出为Excle文件。部分数据如下截图:
+![image](https://github.com/lanluyu/pythonjob/job.PNG)
 
